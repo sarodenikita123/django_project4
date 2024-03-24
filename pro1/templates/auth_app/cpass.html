@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% block title %}
+    <title>Change password</title>
+{% endblock %}
+{% block content %}
+<body>
+        <form method="post">
+            {% csrf_token %}
+            <label>old password</label>
+            <input type="text" name="old">
+            <br><br>
+            <label>new password</label>
+            <input type="text" name="new">
+            <br><br>
+            <input type="submit" value="Sing up">
+
+        </form>
+</body>
+{% endblock %}
